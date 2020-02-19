@@ -21,3 +21,9 @@
     margin: 0 auto;
     padding: 0 42px;
 }
+header {
+    background-color: #292c37;
+    color: white;
+    position: relative;
+    
+}
