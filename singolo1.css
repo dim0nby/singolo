@@ -1,14 +1,20 @@
 @font-face {
-    font-family: LatoBold;
-    src: url (assets/lato-bold.ttf);
+    font-family: 'LatoBold';
+    src: url('./assets/lato-bold.ttf');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
-    font-family: LatoThin;
-    src: url (assets/lato-thin.ttf);
+    font-family: 'LatoThin';
+    src: url('./assets/lato-thin.ttf');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
-    font-family: LatoRegular;
-    src: url (assets/lato-regular.ttf);
+    font-family: 'LatoRegular';
+    src: url('./assets/Lato-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
 }
 *{
     font-family: LatoBold, sans-serif;
@@ -17,13 +23,51 @@
     box-sizing: border-box;
 }
 .container {
-    width: 1024px;
+    width: 1020px;
     margin: 0 auto;
     padding: 0 42px;
 }
 header {
-    background-color: #292c37;
+    background-color: #2d303a;
     color: white;
     position: relative;
+    box-shadow: 0px 6px 0px #323746;
+    z-index: 9;
     
+}
+h1 {
+    font-size: 26px;
+    letter-spacing: -1.1px;
+}
+h1::after {
+    content: "*";
+    color: #d3635d;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    height: 90px;
+}
+.navigation ul {
+    display: flex;
+    font-size: 12px;
+    letter-spacing: 0px;
+}
+.navigation ul li {
+    list-style-position: inside;
+    margin-left: 10px;
+    margin-right: 4px;
+    color: #494e62;
+}
+.navigation ul li span {
+    color: white;
+}
+.navigation ul li span:hover {
+    cursor: pointer;
+    color: #f06c64;
+}
+.navigation ul li:first-child {
+    list-style: none;
 }
