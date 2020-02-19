@@ -23,7 +23,8 @@
     box-sizing: border-box;
 }
 .container {
-    width: 1020px;
+    width: 100%;
+    max-width: 1020px;
     margin: 0 auto;
     padding: 0 42px;
 }
@@ -70,4 +71,36 @@ header .container {
 }
 .navigation ul li:first-child {
     list-style: none;
+}
+.slider {
+    background-color: #f06c64;
+    height: 600px;
+    box-shadow: 0px 6px 0px #ea676b;
+    position: relative;
+    
+}
+.slider .arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 47.5%;
+}
+.arrow-left {
+    left: 4%;
+}
+.arrow-right {
+    right: 3.9%;
+}
+.slider img {
+    position: absolute;
+}
+.iPhone {
+    display: flex;
+}
+.iPhone-vertical {
+    left: 112px;
+    top: 58px;
+}
+.iPhone-horizontal {
+    right: 112px;
+    top: 179px;
 }
