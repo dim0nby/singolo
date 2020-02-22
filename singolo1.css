@@ -17,7 +17,7 @@
     font-style: normal;
 }
 *{
-    font-family: LatoBold, sans-serif;
+    font-family: LatoRegular, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -34,12 +34,13 @@ header {
     position: relative;
     box-shadow: 0px 6px 0px #323746;
     z-index: 9;
+    max-width: 1020px;
     
 }
 h1 {
-    font-size: 26px;
-    letter-spacing: -1.1px;
-}
+    font-size: 25px;
+    letter-spacing: -0.5px;
+    }
 h1::after {
     content: "*";
     color: #d3635d;
@@ -79,7 +80,7 @@ header .container {
     height: 600px;
     box-shadow: 0px 6px 0px #ea676b;
     position: relative;
-    
+    max-width: 1020px;   
 }
 .slider .arrow {
     cursor: pointer;
@@ -110,6 +111,7 @@ header .container {
     background-color: #f2f2f2;
     padding-bottom: 29px;
     margin-bottom: 6px;
+    max-width: 1020px;
 }
 .services .container {
     padding-top: 65px;
@@ -122,17 +124,18 @@ header .container {
     margin-top: 18px;
     margin-bottom: 46px;
     font-size: 18px;
-    font-family: LatoRegular, sans-serif;
     color: #767e9e;
     line-height: 30px;
-    letter-spacing: 0.25px;
-    word-spacing: 0.6px;
-}
+    letter-spacing: -0.25px;
+    }
+
 .services-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    max-width: 1020px;
+    margin-top: -30px;
     max-width: 1020px;
 }
 .services-element {
